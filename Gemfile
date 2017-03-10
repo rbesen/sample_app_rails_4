@@ -11,6 +11,11 @@ gem 'will_paginate', '3.0.4'
 gem 'bootstrap-will_paginate', '0.0.9'
 
 group :development, :test do
+  gem 'pronto'
+  gem 'pronto-rubocop', require: false
+end
+
+group :development, :test do
   gem 'pg'
   gem 'rspec-rails', '2.13.1'
   # The following optional lines are part of the advanced setup.

@@ -1,0 +1,5 @@
+github:
+  slug: rbesen/sample_app_rails_4
+  web_endpoint: https://github.com/
+max_warnings: 150
+verbose: false
