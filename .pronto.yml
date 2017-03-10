@@ -1,5 +1,7 @@
 github:
   slug: rbesen/sample_app_rails_4
+  access_token: ab10a1827ec72876ff88425fb2bfe435f37c70a5
+  api_endpoint: https://api.github.com/
   web_endpoint: https://github.com/
 max_warnings: 150
 verbose: false
