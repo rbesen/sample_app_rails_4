@@ -1,6 +1,6 @@
 class MicropostsController < ApplicationController
   before_action :signed_in_user, only: [:create, :destroy]
-  before_action :correct_user,   only: :destroy
+  before_action :correct_user,   only: [:destroy, :show]
 
   def create
     @micropost = current_user.microposts.build(micropost_params)
@@ -16,6 +16,10 @@ class MicropostsController < ApplicationController
   def destroy
     @micropost.destroy
     redirect_to root_url
+  end
+
+  def show
+    render json: {micropost: @micropost}, status: :ok
   end
 
   private
