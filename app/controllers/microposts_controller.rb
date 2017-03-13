@@ -19,6 +19,7 @@ class MicropostsController < ApplicationController
   end
 
   def show
+    require 'pry';binding.pry
     render json: {micropost: @micropost}, status: :ok
   end
 
