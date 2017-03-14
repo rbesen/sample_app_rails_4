@@ -14,6 +14,7 @@ class MicropostsController < ApplicationController
   end
 
   def destroy
+    require 'pry';binding.pry
     @micropost.destroy
     redirect_to root_url
   end
